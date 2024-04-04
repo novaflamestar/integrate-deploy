@@ -7,5 +7,5 @@ namePrefix: prd-
 resources:
 - ../../baseline
 
-patchesStrategicMerge:
-- pod-deploy.yaml
+patches:
+- path: pod-deploy.yaml
