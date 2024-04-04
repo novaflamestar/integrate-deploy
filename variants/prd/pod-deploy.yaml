@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-deploy
+spec:
+  selector:
+    matchLabels:
+      app: prd-app
+  template:
+    metadata:
+      name: prd-pod
+      labels:
+        app: prd-app
+  replicas: 5
+    
