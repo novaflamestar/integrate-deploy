@@ -15,9 +15,6 @@ spec:
       containers:
         - name: nginx
           image: nginx
-          args:
-            - "-p"
-            - "8080:80"
           ports:
             - containerPort: 8080
   replicas: 3
