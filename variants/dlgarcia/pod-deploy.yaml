@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-deploy
+spec:
+  selector:
+    matchLabels:
+      app: dlgarcia-app
+  template:
+    metadata:
+      name: dlgarcia-pod
+      labels:
+        app: dlgarcia-app
+  replicas: 1
+    

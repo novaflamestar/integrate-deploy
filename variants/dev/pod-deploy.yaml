@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-deploy
+spec:
+  selector:
+    matchLabels:
+      app: dev-app
+  template:
+    metadata:
+      name: dev-pod
+      labels:
+        app: dev-app
+  replicas: 1
+    
