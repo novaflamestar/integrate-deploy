@@ -9,3 +9,4 @@ resources:
 
 patches:
 - path: pod-deploy.yaml
+- path: svc-deploy.yaml
